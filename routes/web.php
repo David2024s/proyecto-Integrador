@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/inicio', function () {
+    return view('inicio');
+});
+
 Route::get('/logeo/login', function () {
     return view('logeo.login');
 })->name('login');

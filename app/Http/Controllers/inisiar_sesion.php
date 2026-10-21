@@ -13,6 +13,7 @@ class inisiar_sesion extends Controller
 
     if(request('email') == null || request('password') == null || request('password') == ""){
         return view('logeo.login');
+        
     }
         $datos = DB::table('usuario')
             ->select('*')
@@ -21,10 +22,11 @@ class inisiar_sesion extends Controller
             ->first();
 
         if ($datos) {
-            return view('home');
+             return view('inicio', ['success' => '¡Hola bienvenido'. $datos->nombre . '!' , 'usuario' => $datos ]);
+            
 
         } else {
-            return view('logeo.login');
+            return view('home');
         }
 
     }
