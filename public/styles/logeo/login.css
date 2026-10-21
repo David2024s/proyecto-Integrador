@@ -1,0 +1,151 @@
+:root{
+    --primary-color: #2A1E17;
+    --fondo-secundario: #5C3A21;
+    --fondo: #FFF8E7;
+    --gris-pardo: #CBBBB0;
+    --rojo-terracota: #C4433A;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--primary-color);
+    font-family: "Manrope", sans-serif;
+}
+
+
+main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+        background-color: var(--fondo);
+    
+}
+
+.contenido{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-form{
+    width: 400px;
+    height: max-content;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    gap: 20px;
+    background-color: var(--primary-color);
+    
+}
+
+.cont-form span, .cont-form h1{
+    color: #ffff;
+}
+
+.cont-form h1{
+    font-size: 20px;
+}
+
+
+.cont-form form{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-form form label{
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.span-form{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.material-symbols-outlined{
+    font-size: 15px;
+}
+
+
+.cont-form form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.cont-form  button{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-form form button{
+    background-color: var(--rojo-terracota);
+    color: #ffff;
+}
+
+.cont-form .btn-salir{
+    width:  100%;
+    border: 2px solid #fff;
+    background-color: transparent;
+   
+    
+    
+}
+
+.cont-form .btn-salir a{
+     text-decoration: none;
+         color: #ffff;
+
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: #ffff;
+    margin: 20px 0;
+}
+
+.cont-form .btn-crear-cuenta{
+    background: transparent;
+    width: max-content;
+    height: min-content;
+    
+   
+}
+
+.cont-form .btn-crear-cuenta a, .cont-form .btn-crear-cuenta span{
+    color: var(--rojo-terracota);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 5px;
+   
+}
